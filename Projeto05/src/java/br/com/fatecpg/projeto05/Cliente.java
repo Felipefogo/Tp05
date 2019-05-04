@@ -13,7 +13,7 @@ public class Cliente {
     private String email;
 
     public static ArrayList<Cliente> getList() throws Exception {
-        ArrayList<Cliente> list = new ArrayList<>();
+        ArrayList<Cliente> lista = new ArrayList<>();
         Class.forName("org.apache.derby.jdbc.ClientDriver");
         String url = "jdbc:derby://localhost:1527/sample";
         Connection con = DriverManager.getConnection(url, "app", "app");
@@ -24,12 +24,10 @@ public class Cliente {
             c.setId(rs.getInt("CUSTOMER_ID"));
             c.setNome(rs.getString("NAME"));
             c.setEmail(rs.getString("EMAIL"));
-            list.add(c);
+            lista.add(c);
         }
-        rs.close();
-        st.close();
-        con.close();
-        return list;
+        rs.close();st.close();con.close();
+        return lista;
     }
 
     public Cliente() {

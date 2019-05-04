@@ -14,18 +14,22 @@
     </head>
     <body>
     <center> <%@include file="WEB-INF/jspf/menu.jspf"%>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-8">
-                    <h1>Projeto - 05</h1><br>
-                    <h2>Integrantes:</h2><br><br>
-                    <h2>Felipe Venâncio</h2>
-                    <h2>Matheus da Silva Morais</h2>
+
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="display-4">Projeto - 05</h1><br>
+                        <p class="lead">Felipe Venâncio</p>
+                        <p class="lead">Matheus Morais</p>
+                    </div>
                 </div>
-            </div>
+            </div>  
         </div>
+
     </center>
-        
-        <%@include file="WEB-INF/jspf/footer.jspf"%>
-    </body>
+
+    <%@include file="WEB-INF/jspf/footer.jspf"%>
+</body>
 </html> 

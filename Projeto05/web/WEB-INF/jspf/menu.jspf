@@ -1,8 +1,13 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<div>
-<a href="home.jsp">Home</a> ||
-<a href="customers.jsp">Cliente</a> ||
-<a href="manufacture.jsp">Fabricante</a>
-<hr/>
-</div>
+
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="home.jsp">Home</a></li>
+    <li class="breadcrumb-item"><a href="clientes.jsp">Clientes</a></li>
+    <li class="breadcrumb-item"><a href="fabricantes.jsp">Fabricantes</a></li>
+  </ol>
+</nav>
+
+
